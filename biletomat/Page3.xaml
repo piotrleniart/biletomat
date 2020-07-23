@@ -1,0 +1,31 @@
+﻿<Page x:Class="biletomat.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:biletomat"
+      mc:Ignorable="d" 
+      d:DesignHeight="692" d:DesignWidth="1024"
+      Title="Page3">
+
+    <Grid>
+        <TextBox TextAlignment="Center" FontSize="22" Padding="10" HorizontalAlignment="Left" Height="55" Margin="573,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="TextBox_TextChanged" Text="0" Name="iloscBilNorm" Foreground="#FF2A5777"/>
+        <Label Name="labBN" Content="Bilet Normalny" HorizontalAlignment="Left" Margin="303,74,0,0" VerticalAlignment="Top" FontSize="28" Foreground="#FF2A5777"/>
+        <Label Name="CenaNormalny" Content="3,20zł" HorizontalAlignment="Left" Margin="303,121,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#FF2A5777"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="643,88,0,0" VerticalAlignment="Top" Width="55"  Height="55" FontSize="44" Padding="-10"  Click="Button_Click_1" Foreground="White" BorderBrush="#FF1C3E55" Background="#FF2A5777"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="518,88,0,0" VerticalAlignment="Top" Width="55" Height="55" FontSize="44" Padding="-10" Click="Button_Click" Foreground="White" BorderBrush="#FF1C3E55" Background="#FF2A5777"/>
+        <TextBox TextAlignment="Center" FontSize="22" Padding="10" HorizontalAlignment="Left" Height="55" Margin="573,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" TextChanged="TextBox_TextChanged" Text="0" x:Name="iloscBilUlg" Foreground="#FF2A5777"/>
+        <Label Name="labBU" Content="Bilet Ulgowy" HorizontalAlignment="Left" Margin="303,216,0,0" VerticalAlignment="Top" FontSize="28" Foreground="#FF2A5777"/>
+        <Label Name="CenaUlgowy" Content="1,60zł" HorizontalAlignment="Left" Margin="303,263,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#FF2A5777"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="643,230,0,0" VerticalAlignment="Top" Width="55" Height="55" FontSize="44" Padding="-10" Click="Button_Click2" Foreground="White" BorderBrush="#FF1C3E55" Background="#FF2A5777"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="518,230,0,0" VerticalAlignment="Top" Width="55" Height="55" FontSize="44" Padding="-10" Click="Button_Click3" Foreground="White" BorderBrush="#FF1C3E55" Background="#FF2A5777"/>
+        <Label Name="labLiczba" Content="Liczba biletów :" HorizontalAlignment="Left" Margin="130,475,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Label Name="labIle" Content="8" HorizontalAlignment="Left" Margin="394,475,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Label Name="labDoZapl" Content="Do zapłaty :" HorizontalAlignment="Left" Margin="130,530,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF2A5777"/>
+        <Label Name="labCena" Content="0,00zł" HorizontalAlignment="Left" Margin="394,530,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF2A5777"/>
+
+        <Button Name="buttPlace" HorizontalAlignment="Left" Margin="643,499,0,0" VerticalAlignment="Top" Width="250" Height="100" FontSize="48" Click="Place" Foreground="White" Background="#FF2A5777" BorderBrush="#FF2A6D85">
+            <TextBlock>PŁACĘ</TextBlock>
+        </Button>
+    </Grid>
+</Page>

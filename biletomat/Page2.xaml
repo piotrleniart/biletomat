@@ -1,0 +1,19 @@
+﻿<Page x:Class="biletomat.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:biletomat"
+      mc:Ignorable="d" 
+      d:DesignHeight="692" d:DesignWidth="1024"
+      Title="Page2">
+
+    <Grid>
+        <TextBlock Name="labWaz" Text="Wybierz ważność biletu" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" Margin="139,77,100,483" Height="132" Foreground="#FF2A5777" Width="785" />
+        <Button Name="butZw" Content="Linie zwykłe" HorizontalAlignment="Left" Margin="75,273,0,0" VerticalAlignment="Top" Width="352" Height="142" FontSize="32" Click="Button_Click" Foreground="#FF2A5777" Background="White" BorderBrush="#FF479536"/>
+        <Button Name="butSp" HorizontalAlignment="Left" Margin="605,273,0,0" VerticalAlignment="Top" Width="386" Height="142" FontSize="32" Click="Button_Click2" Foreground="#FF2A5777" Background="White" BorderBrush="#FFC14444">
+            <TextBlock>Linie nocne, pospieszne<LineBreak/>specjalne i zwykłe</TextBlock>
+        </Button>
+
+    </Grid>
+</Page>

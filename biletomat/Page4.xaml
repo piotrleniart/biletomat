@@ -1,0 +1,34 @@
+﻿<Page x:Class="biletomat.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:biletomat"
+      mc:Ignorable="d" 
+      d:DesignHeight="692" d:DesignWidth="1024"
+      Title="Page4">
+
+    <Grid>
+        <Label Name="labPods" Content="PODSUMOWANIE" HorizontalAlignment="Left" Margin="321,29,0,0" VerticalAlignment="Top" FontSize="44" Foreground="#FF2A5777"/>
+        <Label Name="labMetody" Content="METODY PŁATNOŚCI" HorizontalAlignment="Left" Margin="562,147,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Label Name="labTyp" Content="Typ biletu" HorizontalAlignment="Left" Margin="158,147,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Label Name="typ" Content="Jednorazowy" HorizontalAlignment="Left" Margin="158,207,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="przew" Content="ZKM Gdynia" HorizontalAlignment="Left" Margin="158,243,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="linia" Content="Zwykłe linie" HorizontalAlignment="Left" Margin="158,283,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="labBN" Content="Bilety normalne : " HorizontalAlignment="Left" Margin="158,385,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="ilNorm" Content="0" HorizontalAlignment="Left" Margin="352,385,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="labBU" Content="Bilety ulgowe : " HorizontalAlignment="Left" Margin="158,421,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="ilUlg" Content="0" HorizontalAlignment="Left" Margin="352,421,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF2A5777"/>
+        <Label Name="labCena" Content="CENA" HorizontalAlignment="Left" Margin="158,485,0,0" VerticalAlignment="Top" FontSize="54" Foreground="#FF2A5777"/>
+        <Label Name="naleznosc" Content="0,00zł" HorizontalAlignment="Left" Margin="316,485,0,0" VerticalAlignment="Top" FontSize="54" Foreground="#FF2A5777"/>
+        <Label Name="labGot" Content="GOTÓWKA" HorizontalAlignment="Left" Margin="637,225,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Label Name="labKarta" Content="KARTA" HorizontalAlignment="Left" Margin="637,385,0,0" VerticalAlignment="Top" FontSize="34" Foreground="#FF2A5777"/>
+        <Button Name="gotowka" Content="GOTÓWKA" HorizontalAlignment="Left" Margin="637,293,0,0" VerticalAlignment="Top" Width="191" Height="73" FontSize="22" Click="buttClick" Foreground="#FF2A5777" BorderBrush="#FF2A5777" Background="White"/>
+        <Button Name="karta" Content="KARTA" HorizontalAlignment="Left" Margin="637,453,0,0" VerticalAlignment="Top" Width="191" Height="73" FontSize="22" Foreground="#FF2A5777" BorderBrush="#FF2A5777" Background="White" Click="buttClick"/>
+
+        <Popup Width="800" Height="600" Name="koniec" HorizontalAlignment="Center" VerticalAlignment="Center" Placement="Center">
+            <TextBlock Background="White" FontSize="55" TextAlignment="Center" Foreground="#FF2A5777"><Run Text="Dziękujemy za transakcję."/><LineBreak/><Run Text="Życzymy miłego dnia"/><LineBreak/><LineBreak/>Thank you for transaction<LineBreak/>Have a nice day<LineBreak/><LineBreak/><Run Text="ZKM Gdynia"/></TextBlock>
+        </Popup>
+
+    </Grid>
+</Page>
